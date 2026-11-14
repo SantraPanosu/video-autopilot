@@ -42,6 +42,17 @@ channels:
     platforms: [youtube, tiktok, instagram, facebook]
     posts_per_day: 1
 
+    tarihteki_gizemler:
+  name: "Tarihteki Gizemler (@gizemtarih)"
+  niche: "history_mysteries"
+  audience: "Tarihe, kayıp uygarlıklara ve çözülememiş gizemlere meraklı, 18-45 yaş arası Türkçe konuşan izleyiciler"
+  angle: "Az bilinen tarihi olayları, kayıp şehirleri, çözülememiş gizemleri ve arkeolojik sırları merak uyandıran, sürükleyici bir dille anlatmak"
+  tone: "gizemli, meraklı, sürükleyici, hafif ürkütücü"
+  voice: "tr-TR-AhmetNeural"
+  visual_style: "dark, cinematic, historical, epic, ancient ruins, fog"
+  platforms: ["youtube_shorts"]
+  posts_per_day: 1
+
   # ── Template: copy, rename the key, change the fields ──
   # newchannel:
   #   name: ""
