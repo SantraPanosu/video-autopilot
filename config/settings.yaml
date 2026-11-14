@@ -9,14 +9,14 @@ llm:
   #   FREE  groq       fast, generous free tier — model: llama-3.3-70b-versatile
   #   FREE  openrouter many free models — model: meta-llama/llama-3.1-8b-instruct:free
   #   FREE  gemini     Google free tier — model: gemini-flash-latest (auto-tracks newest flash)
-  provider: gemini
-  model: gemini-flash-latest
+  provider: groq
+  model: llama-3.3-70b-versatile
   temperature: 0.9             # higher = more creative hooks
 
 tts:
   provider: edge               # edge (free, no key) | elevenlabs (premium)
   speed: 1.08                  # 1.05–1.15 reads energetic; Playbook §2
-  edge_voice: en-US-AriaNeural # see `edge-tts --list-voices`
+  edge_voice: tr-TR-AhmetNeural # see `edge-tts --list-voices`
   edge_rate: "+0%"             # extra pacing on top of speed; e.g. "+8%"
   edge_pitch: "+0Hz"           # subtle warmth/energy; e.g. "+2Hz"
   elevenlabs_voice: Rachel     # ElevenLabs voice name/id (premium = best audio)
@@ -68,7 +68,7 @@ publish:
   provider: dry_run            # dry_run | ayrshare | upload_post
   queue: false                 # true = generate + queue for manual review, don't post live
   stagger_seconds: 300         # space platform uploads apart
-  platforms: [youtube, tiktok, instagram, facebook]
+  platforms: [youtube]         # Sadece YouTube Shorts için
 
 compliance:
   ai_disclosure: true          # adds AI-assisted note + platform synthetic-media flag
